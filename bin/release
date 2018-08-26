@@ -1,0 +1,9 @@
+#!/bin/sh
+set -ex
+
+BUCKET="pep-${DEPLOY_ENV}-client"
+./node_modules/.bin/react-deploy-s3 deploy\
+  --region us-east-1 \
+  --access-key-id=$AWS_ACCESS_KEY_ID \
+  --secret-access-key=$AWS_SECRET_ACCESS_KEY \
+  --bucket=$BUCKET
