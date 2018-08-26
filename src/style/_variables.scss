@@ -1,0 +1,61 @@
+
+// Colors
+$primary: #828282;
+$transparent: transparent;
+$blue: #40b5e5;
+$alert-red: #ff0000;
+$success-green: #98e05a;
+$purple: #695e96;
+$pink: #e71453;
+$info-teal: #cdf2fe;
+$info-teal-lighten-1: #cfebf9;
+$grey: #4d4d4d;
+$grey-lighten-0-5: #5b5b5b;
+$grey-lighten-0-1: #706e6e;
+$grey-lighten-0: #999999;
+$grey-lighten-1: #b0b0b0;
+$grey-lighten-2: #cccccc;
+$grey-lighten-3: #efefef;
+
+// Modify Bootstrap Theme Colors
+$theme-colors: (
+  "primary": #828282,
+  "transparent": transparent,
+  "blue": #40b5e5,
+  "alert-red": #ff0000,
+  "success-green": #98e05a,
+  "purple": #695e96,
+  "pink": #e71453,
+  "info-teal": #cdf2fe,
+  "info-teal-lighten-1": #cfebf9,
+  "grey": #4d4d4d,
+  "grey-lighten-0-5": #5b5b5b,
+  "grey-lighten-0-1": #706e6e,
+  "grey-lighten-0": #999999,
+  "grey-lighten-1": #b0b0b0,
+  "grey-lighten-2": #cccccc,
+  "grey-lighten-3": #efefef,
+);
+
+// Shadows
+%shadow-sm {
+  box-shadow: 0 2px 8px rgba(0,0,0,.24) !important;
+}
+%shadow-lg {
+  box-shadow: 0 2px 10px rgba(0,0,0,.2) !important;
+}
+
+// @extend variables
+%text-normal {
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-family: "Raleway", sans-serif;
+}
+%title {
+  @extend %text-normal;
+  font-weight: 600;
+  color: $grey;
+}

@@ -1,27 +1,33 @@
-# React-Dev-2
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Daniel Mburu
+### Setup
+You must have the following modules to be able to run the app:
+```
+Docker
+Docker-compose
+Ruby
+nib - A ruby gem wrapping docker compose commands for easy consumption of docker containers.
 
-Why are you receiving this invite?
+```
 
-Hi there,
+### Develop
+Run 
+```
+yarn install
 
-My name is Vincent and I’m co-founder at Caspar Coding, a Dutch company that is working with African tech talent. In January 2019, ten of our best senior Kenyan Javascript developers (React and Node) are coming to the Netherlands for a period of three years. As part of their company building program we’re looking for companies (hosts) that are interested to work with them for the full three year period. 
+nib build
+nib setup web
+nib up web
 
-Duration: 3 years
+```
+You have to assign `docker` and `nib` groups with `sudo` permissions for you to be able to run above commands smoothly.
+And you will be good to go.
 
-Price: EUR 7.000 p/m
+### Deploy
+Run 
+```
+yarn build
+```
+And serve the built files to your preffered static site host.
 
-Start date: beginning of January 2019
-
-We’ve added a challenge that they’ve worked on so you can see their skill set and decide whether you’re interested to explore a collaboration further. 
-
-In case you like the quality of the work and you want to discuss this opportunity in more detail please email me vincent.wijdeveld@casparcoding.com or call / text (or whatsapp) +31639397716. 
-
-Yours sincerely,
-
-Vincent Wijdeveld
-
-Co-founder 
-
-Caspar Coding
+Alternatively, you can access the live site <a href="https://deedmob-search.surge.sh/">here</a>.
